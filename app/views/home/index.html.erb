@@ -12,16 +12,30 @@
 			<ul class="header-list">
 				<li><a class="toplink" href="https://mail.google.com">Gmail</a></li>
 				<li><a class="toplink" href="https://www.google.fr/imghp?hl=fr&tab=wi">Images</a></li>
-				<li><a class="toplink" href="#"> <%= image_tag('Cadrillage.png') %></a></li>
-				<li><a class="toplink" href="https://accounts.google.com/signin/v2/sl/pwd?hl=fr&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin"></a><%= image_tag('connexion.png') %></li>
+				<li><%= image_tag('Cadrillage.png') %></a></li>
+				<li><a class="toplink" href="https://accounts.google.com/signin/v2/sl/pwd?hl=fr&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><%= image_tag('connexion.png') %></a></li>
 			</ul>
 		</div>
 		<div class="center">
 			<%= image_tag("logocentral.png", id: "logocentral", alt: "Logo google") %>
-			  <input type="text" name="firstname">
+			  <input id="search" type="text" name="search">
 			  <div class="button">
-			  	<button>Recherche Google</button>
-			  	<button>J'ai de la chance</button>
+			  	<button id="searchbutton">Recherche Google </button> </a>
+			  		<script type="text/javascript">
+			  			document.getElementById("searchbutton").onclick = function() 
+							{
+								let search = document.getElementById("search").value;
+								window.location = "https://www.google.fr/search?q=" + search;
+							}
+			  		</script>
+			  	<button id="luckybutton">J'ai de la chance</button>
+			  		<script type="text/javascript">
+			  			document.getElementById("luckybutton").onclick = function() 
+							{
+								let search = document.getElementById("search").value;
+								window.location = "http://www.google.fr/search?" + search + "&btnI=I'm Feeling Lucky";
+							}
+			  		</script>
 			  </div>
 		</div>
 		<div class="footer">
