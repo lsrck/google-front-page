@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<%= favicon_link_tag 'favicon.png' %>
+	<title>Google</title> 
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+			<ul class="header-list">
+				<li><a class="toplink" href="https://mail.google.com">Gmail</a></li>
+				<li><a class="toplink" href="https://www.google.fr/imghp?hl=fr&tab=wi">Images</a></li>
+				<li><a class="toplink" href="#"> <%= image_tag('Cadrillage.png') %></a></li>
+				<li><a class="toplink" href="https://accounts.google.com/signin/v2/sl/pwd?hl=fr&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin"></a><%= image_tag('connexion.png') %></li>
+			</ul>
+		</div>
+		<div class="center">
+			<%= image_tag("logocentral.png", id: "logocentral", alt: "Logo google") %>
+			  <input type="text" name="firstname">
+			  <div class="button">
+			  	<button>Recherche Google</button>
+			  	<button>J'ai de la chance</button>
+			  </div>
+		</div>
+		<div class="footer">
+			<div class="footer-top">
+				<ul>
+					<li>France</li>
+				</ul>
+			</div>
+			<div class="footer-bot">
+				<div class="footer-bot-left">
+					<ul class="footer-bot-left-list">
+						<li><a class="botlink" href="https://www.google.com/intl/fr_fr/ads/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Publicite</a></li>
+						<li><a class="botlink" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Entreprise</a></li>
+						<li><a class="botlink" href="https://www.google.com/intl/fr_fr/about/?utm_source=google.com&utm_medium=referral&utm_campaign=hp-footer&fg=1">A propos</a></li>
+					</ul>
+				</div>
+				<div class="footer-bot-right">
+					<ul class="footer-bot-right-list">
+						<li><a class="botlink" href="https://support.google.com/websearch/answer/7585859?p=fr_consumer_info&hl=fr&fg=1&visit_id=0-636625840015478275-578790344&rd=1">Info consommateurs</a></li>
+						<li><a class="botlink" href="https://policies.google.com/privacy?hl=fr&gl=fr">Confidentialite</a></li>
+						<li><a class="botlink" href="https://policies.google.com/terms?hl=fr&gl=fr">Conditions</a></li>
+						<li><a class="botlink" href="https://www.google.com/preferences?hl=fr">Parametres</a></li>
+					</ul>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+</body>
+
+</html>
