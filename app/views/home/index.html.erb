@@ -12,10 +12,44 @@
 			<ul class="header-list">
 				<li><a class="toplink" href="https://mail.google.com">Gmail</a></li>
 				<li><a class="toplink" href="https://www.google.fr/imghp?hl=fr&tab=wi">Images</a></li>
-				<li><%= image_tag('Cadrillage.png') %></a></li>
+				<li id="cadrillage"> <%= image_tag('Cadrillage.png') %> </li>
 				<li><a class="toplink" href="https://accounts.google.com/signin/v2/sl/pwd?hl=fr&passive=true&continue=https%3A%2F%2Fwww.google.com%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><%= image_tag('connexion.png') %></a></li>
 			</ul>
 		</div>
+
+		<script type="text/javascript">
+			document.getElementById("cadrillage").onclick = function () {
+				let menu = document.getElementById("appmenu");
+				console.log(menu);
+				if (menu.style.display == "none") {
+					menu.style.display = "block";
+					console.log(1)
+				} else {
+					console.log(2)
+					menu.style.display = "none";
+				}
+			};
+
+		</script>
+
+		<div id="appmenu">
+			<ul id="applist">
+				<li class="appicon"> <%= image_tag('moncompte.png') %> </li>
+				<li class="appicon"> <%= image_tag('recherche.png') %> </li>
+				<li class="appicon"> <%= image_tag('maps.png') %> </li>
+				<li class="appicon"> <%= image_tag('youtube.png') %> </li>
+				<li class="appicon"> <%= image_tag('play.png') %> </li>
+				<li class="appicon"> <%= image_tag('actualites.png') %> </li>
+				<li class="appicon"> <%= image_tag('gmail.png') %> </li>
+				<li class="appicon"> <%= image_tag('contacts.png') %> </li>
+				<li class="appicon"> <%= image_tag('drive.png') %> </li>
+				<li class="appicon"> <%= image_tag('agenda.png') %> </li>
+				<li class="appicon"> <%= image_tag('googleplus.png') %> </li>
+				<li class="appicon"> <%= image_tag('traduction.png') %> </li>
+				<li class="appicon"> <%= image_tag('photos.png') %> </li>
+			</ul>
+		</div>
+
 		<div class="center">
 			<%= image_tag("logocentral.png", id: "logocentral", alt: "Logo google") %>
 			  <input id="search" type="text" name="search">

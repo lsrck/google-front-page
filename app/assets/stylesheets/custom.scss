@@ -30,6 +30,38 @@ li {
 	list-style-type: none;
 }
 
+#cadrillage {
+	cursor: pointer;
+}
+
+#appmenu {
+	display: none;
+	position: fixed;
+	height: 200px;
+	width: 340px;
+	right: 1%;
+	overflow-y: auto;
+	border: 1px solid #ccc;
+	box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+
+#applist {
+	overflow-y: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 10%;
+}
+
+.appicon {
+	min-width: 27%;
+	min-height: 27.5%;
+	background-color: white;
+	margin: 2.5%;
+}
+
 a {
 	text-decoration:none;
 }
