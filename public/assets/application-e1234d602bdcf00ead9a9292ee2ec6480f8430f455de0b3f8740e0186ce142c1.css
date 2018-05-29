@@ -1,0 +1,223 @@
+/* line 1, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+body {
+  margin: 0;
+  font-family: arial,sans-serif;
+  font-size: small;
+  color: #222;
+  height: 100%;
+}
+
+/* line 9, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 14, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+.header-list {
+  margin-top: 1%;
+  margin-right: 1%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 242px;
+}
+
+/* line 23, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+ul {
+  padding-left: 0px;
+}
+
+/* line 27, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+li {
+  margin-left: 10px;
+  margin-right: 10px;
+  list-style-type: none;
+}
+
+/* line 33, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+#cadrillage {
+  cursor: pointer;
+}
+
+/* line 37, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+#appmenu {
+  display: none;
+  position: fixed;
+  height: 200px;
+  width: 340px;
+  right: 1%;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* line 48, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+#applist {
+  overflow-y: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10%;
+}
+
+/* line 58, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+.appicon {
+  min-width: 27%;
+  min-height: 27.5%;
+  background-color: white;
+  margin: 2.5%;
+}
+
+/* line 65, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 69, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+a:hover {
+  text-decoration: underline;
+}
+
+/* line 73, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+a.toplink:visited {
+  color: #222;
+  text-decoration: none;
+}
+
+/* line 78, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+a.botlink:visited {
+  color: #666;
+  text-decoration: none;
+}
+
+/* line 83, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+.center {
+  position: fixed;
+  margin-top: 10%;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+/* line 90, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+input {
+  margin-top: 5%;
+  margin-bottom: 2%;
+  position: relative;
+  background: transparent;
+  min-width: 584px;
+  height: 40px;
+  border: 0;
+  border-radius: 2px;
+  outline: 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+/* line 103, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+input:hover {
+  box-shadow: 2px 3px 10px 0 rgba(0, 0, 0, 0.16), -1px -1px 1px 1px rgba(0, 0, 0, 0.08);
+}
+
+/* line 108, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+button {
+  height: 36px;
+  line-height: 27px;
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+  color: #757575;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 11px 4px;
+  min-width: 54px;
+  padding: 0 16px;
+  text-align: center;
+}
+
+/* line 123, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+button:hover {
+  color: black;
+  border: 1px #e4e4e4 solid;
+}
+
+/* line 128, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+#logocentral {
+  margin-right: 25%;
+  margin-left: 25%;
+}
+
+/* line 133, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+.button {
+  display: flex;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* line 139, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+button {
+  min-width: 148px;
+  height: 36px;
+  margin-right: 4px;
+  margin-left: 4px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 27px;
+  border-radius: 2px;
+}
+
+/* line 150, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+.footer {
+  color: #666;
+  background-color: #f2f2f2;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  min-height: 84px;
+}
+
+/* line 161, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+.footer-top {
+  margin-left: 1%;
+  font-size: 15px;
+  min-height: 42px;
+  border-top: 1px #e4e4e4 solid;
+}
+
+/* line 168, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+.footer-bot {
+  margin: 0 1% 0 1%;
+  min-height: 42px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px #e4e4e4 solid;
+}
+
+/* line 176, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+.footer-bot-left-list {
+  display: flex;
+}
+
+/* line 180, /home/louis/Dev/perso/google/Google/app/assets/stylesheets/custom.scss */
+.footer-bot-right-list {
+  display: flex;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

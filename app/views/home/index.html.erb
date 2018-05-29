@@ -21,15 +21,12 @@
 			document.getElementById("cadrillage").onclick = function () {
 				let menu = document.getElementById("appmenu");
 				console.log(menu);
-				if (menu.style.display == "none") {
-					menu.style.display = "block";
-					console.log(1)
-				} else {
-					console.log(2)
+				if (menu.style.display == "block") {
 					menu.style.display = "none";
+				} else {
+					menu.style.display = "block";
 				}
 			};
-
 		</script>
 
 		<div id="appmenu">
