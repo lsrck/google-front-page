@@ -37,7 +37,7 @@ li {
 #appmenu {
 	display: none;
 	position: fixed;
-	height: 200px;
+	height: 300px;
 	width: 340px;
 	right: 1%;
 	overflow-y: auto;
@@ -50,7 +50,7 @@ li {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin-left: 2%;
+	margin-left: 3%;
 	margin-right: 2%;
 	margin-top: 10%;
 }
@@ -60,6 +60,20 @@ li {
 	min-height: 27.5%;
 	background-color: white;
 	margin: 2.5%;
+}
+
+.split {
+	margin-left: 6.5%;
+}
+
+.border {
+	display: block;
+	position: relative;
+	border-bottom: 1px solid #ebebeb;
+	width: 270px;
+	left: 28px;
+	line-height: 40px;
+	margin-top: 30px;
 }
 
 a {
